@@ -4,8 +4,8 @@ int main()
 {
     int a,b,c;
     scanf("%d%d%d",&a,&b,&c);
-    float s,area;
+    float area,s;
     s=(a+b+c)*0.5;
-   area=sqrt(s*(s-a)*(s-b)*(s-c));
-   printf("%0.2f",area);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("%0.2f",area);
 }
