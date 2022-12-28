@@ -1,33 +1,33 @@
 #include<stdio.h>
-void cb(int u)
-{
-    float uc,b,tb;
-    if(u<=200)
-    {
-        uc=1.20;
-    }
-    else if(u>=200 && u<=400)
-    {
-        uc=1.50;
-    }
-    else
-    {
-        uc=2.0;
-    }
-    b=u*uc;
-    if(b>400)
-    {
-        tb=b+b*0.15;
-    }
-    else
-    {
-        tb=b+100;
-    }
-    printf("%.2f",tb);
-}
 int main()
 {
-    int u;
-    scanf("%d",&u);
-    cb(u);
+    int a;
+    scanf("%d",&a);
+    float u,b,t;
+    if(a<=199)
+    {
+        u=1.20;
+    }
+    else if(a>=200&&a<400)
+    {
+        u=1.50;
+    }
+    else if(a>=400&&a<600)
+    {
+        u=1.80;
+    }
+    else
+    {
+        u=2.00;
+    }
+    b=a*u;
+    if(b>400)
+    {
+        t=b+b*0.15;
+    }
+    else
+    {
+        t=b+100;
+    }
+    printf("%0.2f",t);
 }
