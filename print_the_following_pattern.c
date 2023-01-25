@@ -1,16 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,j;
     scanf("%d",&n);
-    char a,b;
-    for(a=65;a<=(64+n);a++)
+    for(i=0;i<n;i++)
     {
-        for(b=65;b<=(64+n);b++)
+        for(j=0;j<n;j++)
         {
-            printf("%c ",a);
+            if(i==j||(i+j)==(n-1))
+            {
+                printf("x");
+            }
+            else
+            {
+                printf("0");
+            }
         }
         printf("
 ");
-    }
+    }    
 }    
