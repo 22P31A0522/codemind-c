@@ -1,10 +1,9 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
     int n,i,j,temp,s=0;
     scanf("%d",&n);
-    while(s!=1 && s!=4)
+    while(s!=1&&s!=4)
     {
         s=0;
         while(n>0)
@@ -16,7 +15,11 @@ int main()
         n=s;
     }
     if(s==1)
-    printf("True");
+    {
+        printf("True");
+    }
     else
-    printf("False");
+    {
+        printf("False");
+    }
 }
