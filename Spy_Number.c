@@ -10,9 +10,12 @@ int main()
         s=s+d;
         p=p*d;
         n=n/10;
+    }if(s==p)
+    {
+        printf("Spy Number");
     }
-    if(s==p)
-    printf("Spy Number");
     else
-    printf("Not Spy Number");
+    {
+        printf("Not Spy Number");
+    }
 }
